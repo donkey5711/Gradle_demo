@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="gradle demo">
+        <wb-resource deploy-path="/" source-path="/appClientModule" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/" source-path="/src/test"/>
+        <wb-resource deploy-path="/" source-path="/src/main"/>
+        <wb-resource deploy-path="/" source-path="/gradle"/>
+        <wb-resource deploy-path="/" source-path="/.settings"/>
+        <property name="java-output-path" value="/gradle demo/bin"/>
+    </wb-module>
+</project-modules>
