@@ -17,7 +17,7 @@ public class Democontroller {
 	@GetMapping("/list")
 	public String result(Model model) {
 
-		model.addAttribute("name","daniel");
+		model.addAttribute("name","donkey");
 		model.addAttribute("age",30);
 		model.addAttribute("height",170);
 		return "hello";
