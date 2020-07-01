@@ -17,6 +17,7 @@ public class Democontroller {
 
 		model.addAttribute("name","daniel");
 		model.addAttribute("age",20);
+		model.addAttribute("height",170);
 		return "hello";
 	}
 
