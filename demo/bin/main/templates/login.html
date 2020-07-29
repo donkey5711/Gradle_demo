@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<title>md5加密</title>
+		<script src="/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/md5.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form name="search" th:action="@{/dev/adduser}" 
+			method="post"  enctype="multipart/form-data" onsubmit="return testmd5()">
+			<label>新用户名：</label>
+		    <input type="text" name="user" id="userName" value="" /><br>
+		    <label>输入密码：</label>
+			<input type="password" name="pass" value="" /><br>
+		    <label>确认密码：</label>
+			<input type="password" name="encodePass" id="md5" value="" /><br>
+			<button type="submit">提交</button>
+		</form>
+	</body>
+	<script type="text/javascript">
+		function testmd5(){
+			var password = $("#md5").val();
+			if (password != '' && password != null){
+				// 把输入的密码用MD5加密，再填充回原密码框，提交到后台
+				var md5password = $.md5(password);
+				$("#md5").val(md5password);
+			}
+			return true;
+		}
+	</script>
+</html>
